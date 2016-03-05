@@ -76,7 +76,7 @@ task packDeb(type: Deb, dependsOn: fatJar) {
 
   requires('openjdk-7-jre-headless')
   from('build/libs/.') {
-    into "/opt/${project.name}"
+    into "${project.name}"
   }
 
   // installer scripts
